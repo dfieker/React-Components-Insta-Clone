@@ -19,7 +19,7 @@ console.log(data);
 
   return (
     <div className="App">
-      {data}
+      <PostsPage postData ={data} />
     </div>
   );
 };
