@@ -10,15 +10,16 @@ import "./App.css";
 // import dummydata
 import PostsPage from "./components/PostsContainer/PostsPage";
 import SearchBar from "./components/SearchBar/SearchBarContainer";
-import dummydata from "./dummy-data";
+import dummyData from "./dummy-data";
 
 const App = () => {
   // set up state for the dummy data and pass to your PostsPage
-const [data] = useState(dummydata);
+const [data] = useState(dummyData);
 console.log(data);
 
   return (
     <div className="App">
+      <SearchBar />
       <PostsPage postData ={data} />
     </div>
   );
