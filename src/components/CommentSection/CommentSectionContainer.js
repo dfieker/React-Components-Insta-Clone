@@ -13,8 +13,8 @@ console.log(props);
 
   return (
     <div>
-      {commentData.map(p => (
-        <Comment comment = {p}/>))
+      {commentData.map((comment, index) => (
+        <Comment key ={index} comment = {comment}/>))
         /* map through the comments data and return the Comment component */}
       <CommentInput />
     </div>
